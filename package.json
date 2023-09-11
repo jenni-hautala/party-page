@@ -1,10 +1,13 @@
 {
   "name": "party-page",
   "version": "1.0.0",
+  "homepage": "https://jenni-hautala.github.io/party-page/",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "serve": "parcel src/index.html"
+    "serve": "parcel src/index.html",
+    "predeploy": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +18,8 @@
   "bugs": {
     "url": "https://github.com/jenni-hautala/party-page/issues"
   },
-  "homepage": "https://github.com/jenni-hautala/party-page#readme",
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.9.3"
   }
 }
