@@ -1,0 +1,10 @@
+@import "./scss/settings/bootstrap";
+// utilities
+@import "./scss/utilities/background";
+// components
+@import "./components/hero/hero";
+
+h1 {
+    color: $primary;
+    font-family: 'Times New Roman', Times, serif;
+}
