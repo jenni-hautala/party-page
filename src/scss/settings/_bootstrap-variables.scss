@@ -37,10 +37,10 @@ $grays: (
 // scss-docs-start color-variables
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
+$purple: #9336cf !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
-$orange: #fd7e14 !default;
+$orange: #ff7300 !default;
 $yellow: #ffc107 !default;
 $green: #198754 !default;
 $teal: #20c997 !default;
@@ -286,8 +286,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
-$secondary: $gray-600 !default;
+$primary: $purple !default;
+$secondary: $orange !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -402,6 +402,9 @@ $spacers: (
     3: $spacer,
     4: $spacer * 1.5,
     5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 5,
+    8: $spacer * 6,
     ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -421,8 +424,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align: null !default;
-$body-color: $gray-900 !default;
-$body-bg: $white !default;
+$body-color: $white !default;
+$body-bg: $gray-900 !default;
 
 $body-secondary-color: rgba($body-color, .75) !default;
 $body-secondary-bg: $gray-200 !default;
@@ -587,19 +590,9 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    "Noto Sans",
-    "Liberation Sans",
-    Arial,
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji" !default;
+$font-family-serif: system-ui,
+        'Libre Baskerville',
+        serif !default;
 $font-family-monospace: SFMono-Regular,
     Menlo,
     Monaco,
@@ -608,13 +601,13 @@ $font-family-monospace: SFMono-Regular,
     "Courier New",
     monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base: var(--#{$prefix}font-sans-serif) !default;
+$font-family-base: var(--#{$prefix}font-monospace) !default;
 $font-family-code: var(--#{$prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root: null !default;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1.25rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * .875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -632,12 +625,12 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h1-font-size: $font-size-base * 3 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$h3-font-size: $font-size-base * 2 !default;
+$h4-font-size: $font-size-base * 1.75 !default;
+$h5-font-size: $font-size-base * 1.5 !default;
+$h6-font-size: $font-size-base * 1.25 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -652,11 +645,11 @@ $font-sizes: (
 
 // scss-docs-start headings-variables
 $headings-margin-bottom: $spacer * .5 !default;
-$headings-font-family: null !default;
+$headings-font-family: 'Henny Penny', cursive !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
+$headings-color: $primary !default;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings

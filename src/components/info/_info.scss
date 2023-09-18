@@ -1,0 +1,17 @@
+.iframe-container {
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    .iframe {
+        width: 1240px;
+        height: 1190px;
+        position: absolute;
+        top: -628px;
+        left: -130px;
+    }
+}
+
+.map-iframe-container {
+    height: 500px;
+}

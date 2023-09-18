@@ -1,3 +1,14 @@
 .hero {
     height: 100vh;
+    h1>span{
+        display: block;
+        &:not(:last-of-type) { margin-bottom: clamp(1.5rem, 4vw, 2.5rem); }
+        &:first-of-type {
+            font-size: clamp(2.5rem, 4vw, 7.5rem);
+        }
+        &:last-of-type {
+            font-size: clamp(2rem, 5vw, 14rem);
+            hyphens: auto;
+        }
+    }
 }

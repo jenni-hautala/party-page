@@ -6,7 +6,7 @@ const Hero = () => {
     // const i2: any = '--i:2';
     // const i3: any = '--i:3';
     return (
-        <section className="hero w-100 bg-black">
+        <section className="hero w-100 bg-black d-flex flex-column align-items-center justify-content-center">
             {/* <div className="glowing">
                 <span style={i1}></span>
                 <span style={i2}></span>
@@ -16,6 +16,11 @@ const Hero = () => {
                 <span style={i2}></span>
                 <span style={i3}></span>
             </div> */}
+            <h1 className="text-center">
+                <span>Tervetuloa</span>
+                <span>Jennin</span>
+                <span>Halloweensynttäreille</span>
+            </h1>
         </section>
     )
 };
